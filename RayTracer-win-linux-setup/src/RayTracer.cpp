@@ -64,8 +64,8 @@ Ray RayTracer::ray_thru_pixel(int i, int j) {
      * TODO: Task 1.2
      * Randomly sample x and y inside pixel(i, j)
      */
-    float x = 0.5f;
-    float y = 0.5f;
+    float x = linearRand(0, i);
+    float y = linearRand(0, j);
 
     /**
      * TODO: Task 1.1
@@ -79,7 +79,7 @@ Ray RayTracer::ray_thru_pixel(int i, int j) {
     vec3 v(camera.cameraMatrix[1]);
     vec3 w(camera.cameraMatrix[2]);
 
-    ray.dir = glm::normalize(alpha * camera.aspect * glm::tan(camera.fovy / 2) * u + beta * glm::glm(camera.fovy / 2) * v - w);
+    ray.dir = normalize(alpha * camera.aspect * tan(camera.fovy / 2) * u + beta * glm(camera.fovy / 2) * v - w);
 
     return ray;
 }
