@@ -48,37 +48,20 @@ void RayTracer::init(int scene_id) {
 }
 
 Ray RayTracer::ray_thru_pixel(int i, int j) {
-    /**
-     * This function generated a ray passing through camera origin
-     * and pixel (i, j)
-     */
-
+    // Create ray
     Ray ray;
     ray.pixel_x_coordinate = i;
     ray.pixel_y_coordinate = j;
-
-    // p0
     ray.p0 = glm::vec3(camera.eye);
 
-    /**
-     * TODO: Task 1.2
-     * Randomly sample x and y inside pixel(i, j)
-     */
-    float x = ray.pixel_x_coordinate + linearRand(0, 1);
-    float y = ray.pixel_y_coordinate + linearRand(0, 1);
+    // Pixel coordinates in Normalized Device Coordinates (ranges from bottom left (-1, -1) to top left (1, 1) for OpenGL)
+    float alpha = 2.0f * ((static_cast<float>(i) + linearRand(0, 1)) / static_cast<float>camera.width) - 1.0f;
+    float beta = 1.0f - 2.0f * ((static_cast<float>(j) + linearRand(0, 1)) / static_cast<float>camera.height);
 
-    /**
-     * TODO: Task 1.1
-     * calculate and assign direction to ray which is passoing
-     * through current pixel (i, j)
-     */
-    float alpha = 2 * ((x + 0.5)/ camera.width) - 1;  // TODO: Implement this
-    float beta = 1 - 2 * ((y + 0.5) / camera.height);   // TODO: Implement this
-
+    // Ray direction
     vec3 u(camera.cameraMatrix[0]);
     vec3 v(camera.cameraMatrix[1]);
     vec3 w(camera.cameraMatrix[2]);
-
     ray.dir = normalize(alpha * camera.aspect * tan(camera.fovy / 2) * u + beta * tan(camera.fovy / 2) * v - w);
 
     return ray;
@@ -194,11 +177,7 @@ void RayTracer::draw() {
 
     // Normal Shading
     if (this->shading_mode == ShadingMode::NORMAL) {
-        /**
-         * TODO: After Completing Task 3
-         * set `active_samples_per_pixel = 1`
-         */
-        active_samples_per_pixel = samples_per_pixel;  // TODO: Hardcode this value to 1 once Task 3 is complete
+        active_samples_per_pixel = 1;
         active_max_bounces = 1;
     } else {
         active_samples_per_pixel = samples_per_pixel;
