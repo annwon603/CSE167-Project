@@ -19,22 +19,22 @@ std::vector<Intersection> GeomSphere::intersect(Ray &ray) {
      * TODO: Implement the Ray intersection with the current geometry
      */
 
-    float expression = glm::pow(glm::dot(ray.dir, ray.p0 - center), 2) - glm::pow(glm::length(ray.p0 - center), 2) + glm::pow(radius, 2);
+    float expression = pow(dot(ray.dir, ray.p0 - center), 2) - pow(length(ray.p0 - center), 2) + pow(radius, 2);
 
-    float tPos = glm::dot(-ray.dir, (ray.p0 - center)) + glm::sqrt(expression);
-    float tNeg = glm::dot(-ray.dir, (ray.p0 - center)) - glm::sqrt(expression);
+    float tQuadPos = dot(-ray.dir, (ray.p0 - center)) + sqrt(expression);
+    float tQuadNeg = dot(-ray.dir, (ray.p0 - center)) - sqrt(expression);
 
-    vec3 point = ray.p0 + tPos * ray.dir;
-    vec3 normal = glm::normalize(point - center);
+    vec3 point = ray.p0 + tQuadPos * ray.dir;
+    vec3 normal = normalize(point - center);
 
     if (expression != 0) {
-        float tCurrent = tPos;
+        float tCurrent = tQuadPos;
 
-        if (expression > 0 && tNeg > 0) {
-            tCurrent = tNeg;
+        if (expression > 0 && tQuadNeg > 0) {
+            tCurrent = tQuadNeg;
         }
 
-        intersections.push_back({ tPos, point, normal, this, nullptr });
+        intersections.push_back({ tQuadPos, point, normal, this, nullptr });
     }
 
     /**
