@@ -54,21 +54,9 @@ Ray RayTracer::ray_thru_pixel(int i, int j) {
     ray.pixel_y_coordinate = j;
     ray.p0 = glm::vec3(camera.eye);
 
-    /**
-     * TODO: Task 1.2
-     * Randomly sample x and y inside pixel(i, j)
-     */
-    float x = ray.pixel_x_coordinate + linearRand(0, 1);
-    float y = ray.pixel_y_coordinate + linearRand(0, 1);
-
-
-    /**
-     * TODO: Task 1.1
-     * calculate and assign direction to ray which is passoing
-     * through current pixel (i, j)
-     */
-    float alpha = 2 * ((x + 0.5f)/ camera.width) - 1;  // TODO: Implement this
-    float beta = 1 - 2 * ((y + 0.5f) / camera.height);   // TODO: Implement this
+    // Pixel coordinates in Normalized Device Coordinates (ranges from bottom left (-1, -1) to top left (1, 1) for OpenGL)
+    float alpha = 2.0f * ((static_cast<float>(i) + linearRand(0, 1)) / static_cast<float>(camera.width)) - 1.0f;
+    float beta = 1.0f - 2.0f * ((static_cast<float>(j) + linearRand(0, 1)) / camera.height);
 
     vec3 u(camera.cameraMatrix[0]);
     vec3 v(camera.cameraMatrix[1]);
