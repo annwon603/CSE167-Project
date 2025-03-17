@@ -27,14 +27,9 @@ std::vector<Intersection> GeomSphere::intersect(Ray &ray) {
     vec3 point = ray.p0 + tQuadPos * ray.dir;
     vec3 normal = normalize(point - center);
 
-    if (expression != 0) {
-        float tCurrent = tQuadPos;
-
-        if (expression > 0 && tQuadNeg > 0) {
-            tCurrent = tQuadNeg;
-        }
-
-        intersections.push_back({ tQuadPos, point, normal, this, nullptr });
+    if (expression >= 0) {
+        float tCurrent = (tQuadPos < tQuadNeg) ? tQuadPos : tQuadNeg;
+        intersections.push_back({ tCurrent, point, normal, this, nullptr });
     }
 
     /**
