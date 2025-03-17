@@ -48,16 +48,10 @@ void RayTracer::init(int scene_id) {
 }
 
 Ray RayTracer::ray_thru_pixel(int i, int j) {
-    /**
-     * This function generated a ray passing through camera origin
-     * and pixel (i, j)
-     */
-
+    // Create ray
     Ray ray;
     ray.pixel_x_coordinate = i;
     ray.pixel_y_coordinate = j;
-
-    // p0
     ray.p0 = glm::vec3(camera.eye);
 
     /**
@@ -79,7 +73,6 @@ Ray RayTracer::ray_thru_pixel(int i, int j) {
     vec3 u(camera.cameraMatrix[0]);
     vec3 v(camera.cameraMatrix[1]);
     vec3 w(camera.cameraMatrix[2]);
-
     ray.dir = normalize(alpha * camera.aspect * tan(camera.fovy / 2) * u + beta * tan(camera.fovy / 2) * v - w);
 
     return ray;
@@ -195,11 +188,7 @@ void RayTracer::draw() {
 
     // Normal Shading
     if (this->shading_mode == ShadingMode::NORMAL) {
-        /**
-         * TODO: After Completing Task 3
-         * set `active_samples_per_pixel = 1`
-         */
-        active_samples_per_pixel = samples_per_pixel;  // TODO: Hardcode this value to 1 once Task 3 is complete
+        active_samples_per_pixel = 1;
         active_max_bounces = 1;
     } else {
         active_samples_per_pixel = samples_per_pixel;
