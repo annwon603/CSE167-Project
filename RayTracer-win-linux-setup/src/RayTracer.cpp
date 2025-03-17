@@ -55,13 +55,16 @@ Ray RayTracer::ray_thru_pixel(int i, int j) {
     ray.p0 = glm::vec3(camera.eye);
 
     // Pixel coordinates in Normalized Device Coordinates (ranges from bottom left (-1, -1) to top left (1, 1) for OpenGL)
-    float alpha = 2.0f * ((static_cast<float>(i) + linearRand(0, 1)) / static_cast<float>(camera.width)) - 1.0f;
-    float beta = 1.0f - 2.0f * ((static_cast<float>(j) + linearRand(0, 1)) / camera.height);
+    double alpha = 2.0 * ((static_cast<double>(i) + linearRand(0.0, 1.0)) / static_cast<double>(camera.width)) - 1.0;
+    double beta = 1.0 - 2.0 * ((static_cast<double>(j) + linearRand(0.0, 1.0)) / static_cast<double>(camera.height));
 
     vec3 u(camera.cameraMatrix[0]);
     vec3 v(camera.cameraMatrix[1]);
     vec3 w(camera.cameraMatrix[2]);
-    ray.dir = normalize(alpha * camera.aspect * tan(camera.fovy / 2) * u + beta * tan(camera.fovy / 2) * v - w);
+
+    vec3 rayWorldAlpha = static_cast<float>(alpha * camera.aspect * tan(camera.fovy / 2.0)) * u;
+    vec3 rayWorldBeta = static_cast<float>(beta * tan(camera.fovy / 2.0)) * v - w;
+    ray.dir = normalize(rayWorldAlpha + rayWorldBeta);
 
     return ray;
 }

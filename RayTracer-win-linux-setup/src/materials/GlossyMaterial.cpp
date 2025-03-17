@@ -147,9 +147,7 @@ glm::vec3 GlossyMaterial::get_direct_lighting(Intersection &intersection, Scene 
              * - This `if` condition block takes care of `visibility_of_light` part in the equation
              *   So here you just need to calculate contribution of light like we did in HW3 for diffuse part
              */
-            float cos_theta = glm::dot(shadow_ray.dir, intersection.normal);
-            cos_theta = glm::max(cos_theta, 0.0f);
-            vec3 direct_light = light_emission * cos_theta;  // TODO: Update direct light constribution of light source
+            vec3 direct_light = light_emission * max(dot(shadow_ray.dir, intersection.normal), 0.0f);
 
             // attenuation factor for light source based on distance
             float attenuation_factor = scene.light_sources[idx]->material->get_light_attenuation_factor(closest_intersection.t);
