@@ -117,8 +117,8 @@ glm::vec3 GlossyMaterial::get_direct_lighting(Intersection &intersection, Scene 
          * - Surface normal at point of intersection is stored in `intersection.normal`
          */
         Ray shadow_ray;
-        shadow_ray.p0 = vec3(0.0f);   // TODO: Update ray start position here
-        shadow_ray.dir = vec3(0.0f);  // TODO: Update ray direction here
+        shadow_ray.p0 = intersection.point + 0.001f * intersection.normal;   // TODO: Update ray start position here
+        shadow_ray.dir = glm::normalize(light_pos - intersection.point);  // TODO: Update ray direction here
 
         // check if shadow ray intersects any model
         for (unsigned int idx = 0; idx < scene.models.size(); idx++)

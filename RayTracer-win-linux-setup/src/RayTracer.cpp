@@ -67,13 +67,14 @@ Ray RayTracer::ray_thru_pixel(int i, int j) {
     float x = ray.pixel_x_coordinate + linearRand(0, 1);
     float y = ray.pixel_y_coordinate + linearRand(0, 1);
 
+
     /**
      * TODO: Task 1.1
      * calculate and assign direction to ray which is passoing
      * through current pixel (i, j)
      */
-    float alpha = 2 * ((x + 0.5)/ camera.width) - 1;  // TODO: Implement this
-    float beta = 1 - 2 * ((y + 0.5) / camera.height);   // TODO: Implement this
+    float alpha = 2 * ((x + 0.5f)/ camera.width) - 1;  // TODO: Implement this
+    float beta = 1 - 2 * ((y + 0.5f) / camera.height);   // TODO: Implement this
 
     vec3 u(camera.cameraMatrix[0]);
     vec3 v(camera.cameraMatrix[1]);
