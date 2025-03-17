@@ -19,6 +19,24 @@ std::vector<Intersection> GeomSphere::intersect(Ray &ray) {
      * TODO: Implement the Ray intersection with the current geometry
      */
 
+    float expression = glm::pow(glm::dot(ray.dir, ray.p0 - center), 2) - glm::pow(glm::length(ray.p0 - center), 2) + glm::pow(radius, 2);
+
+    float tPos = glm::dot(-ray.dir, (ray.p0 - center)) + glm::sqrt(expression);
+    float tNeg = glm::dot(-ray.dir, (ray.p0 - center)) - glm::sqrt(expression);
+
+    vec3 point = ray.p0 + tPos * ray.dir;
+    vec3 normal = glm::normalize(point - center);
+
+    if (expression != 0) {
+        float tCurrent = tPos;
+
+        if (expression > 0 && tNeg > 0) {
+            tCurrent = tNeg;
+        }
+
+        intersections.push_back({ tPos, point, normal, this, nullptr });
+    }
+
     /**
      * Once you find the intersection, add it to the `intersections` vector.
      *
