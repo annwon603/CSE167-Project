@@ -64,22 +64,22 @@ Ray RayTracer::ray_thru_pixel(int i, int j) {
      * TODO: Task 1.2
      * Randomly sample x and y inside pixel(i, j)
      */
-    float x = linearRand(0, i);
-    float y = linearRand(0, j);
+    float x = linearRand(0, 1);
+    float y = linearRand(0, 1);
 
     /**
      * TODO: Task 1.1
      * calculate and assign direction to ray which is passoing
      * through current pixel (i, j)
      */
-    float alpha = 2 * ((i + 0.5)/ width) - 1;  // TODO: Implement this
-    float beta = 1 - 2 * ((j + 0.5) / height);   // TODO: Implement this
+    float alpha = 2 * ((i + 0.5)/ camera.width) - 1;  // TODO: Implement this
+    float beta = 1 - 2 * ((j + 0.5) / camera.height);   // TODO: Implement this
 
     vec3 u(camera.cameraMatrix[0]);
     vec3 v(camera.cameraMatrix[1]);
     vec3 w(camera.cameraMatrix[2]);
 
-    ray.dir = normalize(alpha * camera.aspect * tan(camera.fovy / 2) * u + beta * glm(camera.fovy / 2) * v - w);
+    ray.dir = normalize(alpha * camera.aspect * tan(camera.fovy / 2) * u + beta * tan(camera.fovy / 2) * v - w);
 
     return ray;
 }
