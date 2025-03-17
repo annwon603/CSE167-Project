@@ -79,7 +79,7 @@ Ray RayTracer::ray_thru_pixel(int i, int j) {
     vec3 v(camera.cameraMatrix[1]);
     vec3 w(camera.cameraMatrix[2]);
 
-    ray.dir = vec3(-1.0f);  // TODO: Implement this
+    ray.dir = glm::normalize(alpha * camera.aspect * glm::tan(camera.fovy / 2) * u + beta * glm::glm(camera.fovy / 2) * v - w);
 
     return ray;
 }
