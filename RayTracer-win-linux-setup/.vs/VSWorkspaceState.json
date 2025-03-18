@@ -9,8 +9,9 @@
     "",
     "\\include",
     "\\lib",
-    "\\src"
+    "\\src\\geometries",
+    "\\src\\materials"
   ],
-  "SelectedNode": "\\include\\Image.h",
+  "SelectedNode": "\\include\\MaterialBase.h",
   "PreviewInSolutionExplorer": false
 }
