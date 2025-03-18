@@ -15,49 +15,22 @@ std::vector<Intersection> GeomSphere::intersect(Ray &ray) {
     // vector to store the intersections
     std::vector<Intersection> intersections;
 
-    /**
-     * TODO: Implement the Ray intersection with the current geometry
-     */
+    highp_dvec3 d = normalize(ray.dir);
+    highp_dvec3 p0 = ray.p0;
+    highp_dvec3 c = center;
 
-    double t = 0.0f;
-    vec3 d = glm::normalize(ray.dir);
+    double expression = pow(dot(d, p0 - c), 2.0) - pow(length(p0 - c), 2.0) + pow(radius, 2.0);
 
-    double addEnd1 = dot(-d , (ray.p0 - center));
-    double expression = pow(dot(d, ray.p0 - center), 2) - pow(length(ray.p0 - center),2) + pow(radius, 2);
+    double t = dot(-d, (p0 - c));
+    double tQuadPos = t + sqrt(expression);
+    double tQuadNeg = t - sqrt(expression);
 
-    if (expression < 0) {
-        return intersections;
+    if (expression >= 0.0 && t >= 0) {
+        double tCurrent = (tQuadPos < tQuadNeg) ? tQuadPos : tQuadNeg;
+        highp_dvec3 point = p0 + tCurrent * d;
+        highp_dvec3 normal = normalize(point - c);
+        intersections.push_back({ static_cast<float>(tCurrent), point, normal, this, nullptr});
     }
-
-    if (expression == 0)
-    {
-        t = addEnd1;
-        vec3 point = ray.p0 + static_cast<float>(t) * d;
-        vec3 normal = glm::normalize(point - center);
-        intersections.push_back({ static_cast<float>(t), point, normal, this, nullptr });
-    }
-    else {
-        double square = sqrt(expression);
-        double posSum = addEnd1 + square;
-        double negSum = addEnd1 - square;
-        double tCurrent = (posSum < negSum) ? posSum : negSum;
-        vec3 point = ray.p0 + static_cast<float>(tCurrent) * d;
-        vec3 normal = glm::normalize(point - center);
-        intersections.push_back({ static_cast<float>(tCurrent) , point, normal, this , nullptr });
-
-    }
-
-   /* float expression = pow(dot(d, ray.p0 - center), 2) - pow(length(ray.p0 - center), 2) + pow(radius, 2);
-
-    float tQuadPos = dot(-d, (ray.p0 - center)) + sqrt(expression);
-    float tQuadNeg = dot(-d, (ray.p0 - center)) - sqrt(expression);
-
-    if (expression >= 0) {
-        float tCurrent = (tQuadPos < tQuadNeg) ? tQuadPos : tQuadNeg;
-        vec3 point = ray.p0 + tCurrent * ray.dir;
-        vec3 normal = glm::normalize(point - center);
-        intersections.push_back({ tCurrent, point, normal, this, nullptr });
-    }*/
 
     /**
      * Once you find the intersection, add it to the `intersections` vector.

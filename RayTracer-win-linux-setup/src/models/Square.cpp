@@ -9,6 +9,7 @@ using namespace glm;
 Square::Square(vec3 center, float side_len, vec3 normal, std::shared_ptr<MaterialBase> mat) {
     this->material = mat;
     this->side_len = side_len;
+    this->center = center;
 
     normal = glm::normalize(normal);
 
