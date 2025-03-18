@@ -67,7 +67,7 @@ Ray GlossyMaterial::sample_ray_and_update_radiance(Ray &ray, Intersection &inter
      * TODO: Task 6.2
      * Calculate the perfect mirror reflection direction
      */
-    vec3 reflection_dir = vec3(0.0f);  // TODO: Update with reflection direction
+    vec3 reflection_dir = 2 * dot(normal, -ray.dir) * normal + ray.dir;  // TODO: Update with reflection direction
 
     // Step 2: Calculate radiance
     /**
@@ -75,7 +75,7 @@ Ray GlossyMaterial::sample_ray_and_update_radiance(Ray &ray, Intersection &inter
      * Note:
      * - C_specular = `this->specular`
      */
-    vec3 W_specular = vec3(0.0f);  // TODO: Calculate the radiance for current bounce
+    vec3 W_specular = this->specular;  // TODO: Calculate the radiance for current bounce
 
     // update radiance
     ray.W_wip = ray.W_wip * W_specular;
