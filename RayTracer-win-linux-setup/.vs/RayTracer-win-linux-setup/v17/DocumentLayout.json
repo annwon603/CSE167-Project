@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\materials\\GlossyMaterial.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\materials\\GlossyMaterial.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\geometries\\GeomSphere.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\geometries\\GeomSphere.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\materials\\GlossyMaterial.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\materials\\GlossyMaterial.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\geometries\\GeomTriangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -45,30 +45,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GeomSphere.cpp",
               "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\geometries\\GeomSphere.cpp",
               "RelativeDocumentMoniker": "src\\geometries\\GeomSphere.cpp",
               "ToolTip": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\geometries\\GeomSphere.cpp",
               "RelativeToolTip": "src\\geometries\\GeomSphere.cpp",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACcAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACcAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-18T03:06:06.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T03:06:06.719Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "GlossyMaterial.cpp",
               "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\materials\\GlossyMaterial.cpp",
               "RelativeDocumentMoniker": "src\\materials\\GlossyMaterial.cpp",
               "ToolTip": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\materials\\GlossyMaterial.cpp",
               "RelativeToolTip": "src\\materials\\GlossyMaterial.cpp",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAAAHgAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAAG0AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-18T03:05:49.405Z",
               "EditorCaption": ""
@@ -83,8 +82,7 @@
               "RelativeToolTip": "src\\geometries\\GeomTriangle.cpp",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-18T03:06:11.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T03:06:11.77Z"
             },
             {
               "$type": "Document",
@@ -97,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Scene.cpp",
               "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\Scene.cpp",
               "RelativeDocumentMoniker": "src\\Scene.cpp",
@@ -105,8 +103,7 @@
               "RelativeToolTip": "src\\Scene.cpp",
               "ViewState": "AgIAAGoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-17T07:02:08.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T07:02:08.47Z"
             },
             {
               "$type": "Document",
@@ -122,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RayTracer.cpp",
               "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\RayTracer.cpp",
               "RelativeDocumentMoniker": "src\\RayTracer.cpp",
@@ -130,8 +127,7 @@
               "RelativeToolTip": "src\\RayTracer.cpp",
               "ViewState": "AgIAAC0AAAAAAAAAAAAgwEAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-17T06:50:28.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T06:50:28.835Z"
             },
             {
               "$type": "Document",

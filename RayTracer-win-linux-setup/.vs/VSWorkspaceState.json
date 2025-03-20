@@ -8,10 +8,7 @@
   "ExpandedNodes": [
     "",
     "\\include",
-    "\\lib",
-    "\\src\\geometries",
-    "\\src\\materials"
+    "\\lib"
   ],
-  "SelectedNode": "\\include\\MaterialBase.h",
   "PreviewInSolutionExplorer": false
 }
