@@ -26,8 +26,8 @@ build/
 *.png
 
 # Object files
-obj/
-*.obj
+# obj/
+# *.obj
 
 # Precompiled headers
 *.pch
