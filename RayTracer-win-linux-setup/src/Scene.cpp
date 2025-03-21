@@ -76,7 +76,7 @@ void Scene::intersect(Ray &ray) const {
 
             // TODO make full box instead of just square
 
-            if (true) {
+            if (false) {
                 continue;
             }
         }
