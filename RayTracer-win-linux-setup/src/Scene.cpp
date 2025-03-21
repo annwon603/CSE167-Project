@@ -6,8 +6,6 @@
 #include "ModelBase.h"
 #include "Ray.h"
 #include "Scene.h"
-#include <Obj.h>
-#include <GlossyMaterial.h>
 
 Scene::Scene(std::unique_ptr<Node> root_node) {
     /**
@@ -68,19 +66,6 @@ void Scene::intersect(Ray &ray) const {
     ray.intersections.clear();
 
     for (unsigned int idx = 0; idx < models.size(); idx++) {
-        ModelBase* model = models[idx].get();
-        Obj* object = dynamic_cast<Obj*>(model);
-        if (object != nullptr) {
-            vec3 bbCenter = vec3((object->maxX + object->minX) / 2.0f, (object->maxY + object->minY) / 2.0f, (object->maxZ + object->minZ) / 2.0f);
-            float bbSideLen = max(object->maxX - object->minX, max(object->maxY - object->minY, object->maxZ - object->minZ));
-
-            // TODO make full box instead of just square
-
-            if (false) {
-                continue;
-            }
-        }
-        
         // ray is updated with just intersection details
         models[idx]->intersect(ray);
     }

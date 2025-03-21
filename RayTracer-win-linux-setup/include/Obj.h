@@ -8,7 +8,6 @@
 
 #include "GeomTriangle.h"
 #include "ModelBase.h"
-#include <Square.h>
 
 class Obj : public ModelBase {
    public:
@@ -19,7 +18,6 @@ class Obj : public ModelBase {
         // Load triangle soup
         loadObj(filename);
     }
-    float maxX, maxY, maxZ, minX, minY, minZ;
 
    private:
     void loadObj(const char* filename) {
@@ -39,15 +37,10 @@ class Obj : public ModelBase {
             std::istringstream ss(line);
             std::string prefix;
             ss >> prefix;
+
             if (prefix == "v") {
                 glm::vec3 vertex;
                 ss >> vertex.x >> vertex.y >> vertex.z;
-                maxX = max(maxX, vertex.x);
-                minX = min(minX, vertex.x);
-                maxY = max(maxY, vertex.y);
-                minY = min(minY, vertex.y);
-                maxZ = max(maxZ, vertex.z);
-                minZ = min(minZ, vertex.z);
                 temp_vertices.push_back(vertex);
             } else if (prefix == "vn") {
                 glm::vec3 normal;
@@ -79,8 +72,6 @@ class Obj : public ModelBase {
                 temp_normals[normalIndices[i + 2]]};
             geometries.push_back(std::make_unique<GeomTriangle>(triVertices, triNormals));
         }
-        std::cout << "(" << maxX << "," << minX << ")";
-
         std::cout << "Done loading and processing. " << geometries.size() << std::endl;
     }
 
