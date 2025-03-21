@@ -26,7 +26,7 @@ class Obj : public ModelBase {
         std::vector<glm::vec3> temp_vertices;
         std::vector<glm::vec3> temp_normals;
         std::vector<unsigned int> vertexIndices, normalIndices;
-
+        std::cout << filename << std::endl;
         std::ifstream file(filename);
         if (!file.is_open()) {
             std::cerr << "Cannot open file: " << filename << std::endl;

@@ -3,7 +3,6 @@
 #include <chrono>
 #include <iostream>
 #include <thread>
-
 // OSX systems need their own headers
 #ifdef __APPLE__
 #include <GLUT/glut.h>
@@ -27,7 +26,7 @@
 
 static const int width = 800;
 static const int height = 600;
-static const char *title = "Ray Tracer";
+static const char* title = "Ray Tracer";
 static const glm::vec4 background(0.1f, 0.2f, 0.3f, 1.0f);
 static Image image(width, height);
 static RayTracer rayTracer(width, height, image);
@@ -58,7 +57,7 @@ void printHelp() {
 )";
 }
 
-bool is_integer(const std::string &str) {
+bool is_integer(const std::string& str) {
     if (str.empty()) return false;
     for (char c : str) {
         if (!std::isdigit(c) && c != '-' && c != '+') return false;
@@ -66,12 +65,7 @@ bool is_integer(const std::string &str) {
     return true;
 }
 
-void lazy_draw_call(int _) {
-    rayTracer.draw();
-    cooldown_active = false;
-}
-
-void initialize(int argc, char **argv) {
+void initialize(int argc, char** argv) {
     printHelp();
     glClearColor(background[0], background[1], background[2], background[3]);  // background color
     glViewport(0, 0, width, height);
@@ -91,13 +85,13 @@ void initialize(int argc, char **argv) {
 }
 
 void display(void) {
-    if (!cooldown_active) {
-        cooldown_active = true;
-        glutTimerFunc(200, lazy_draw_call, 0);  // Set cooldown timer
-    }
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    image.draw();
+    glutSwapBuffers();
+    glFlush();
 }
 
-void saveScreenShot(const char *filename = "test.png") {
+void saveScreenShot(const char* filename = "test.png") {
     int currentwidth = glutGet(GLUT_WINDOW_WIDTH);
     int currentheight = glutGet(GLUT_WINDOW_HEIGHT);
     Screenshot imag = Screenshot(currentwidth, currentheight);
@@ -106,121 +100,141 @@ void saveScreenShot(const char *filename = "test.png") {
 
 void keyboard(unsigned char key, int x, int y) {
     switch (key) {
-        case 27:  // Escape to quit
-            exit(0);
-            break;
-        case 'h':  // print help
-            printHelp();
-            break;
-        case 'o':  // save screenshot
-            saveScreenShot();
-            break;
+    case 27:  // Escape to quit
+        exit(0);
+        break;
+    case 'h':  // print help
+        printHelp();
+        break;
+    case 'o':  // save screenshot
+        saveScreenShot();
+        break;
 
         // Translations
-        case 'w':
-            rayTracer.set_shading_mode(ShadingMode::NORMAL);
-            rayTracer.camera.moveForward(0.2f);
-            glutPostRedisplay();
-            break;
-        case 's':
-            rayTracer.set_shading_mode(ShadingMode::NORMAL);
-            rayTracer.camera.moveForward(-0.2f);
-            glutPostRedisplay();
-            break;
-        case 'a':
-            rayTracer.set_shading_mode(ShadingMode::NORMAL);
-            rayTracer.camera.moveRight(-0.2f);
-            glutPostRedisplay();
-            break;
-        case 'd':
-            rayTracer.set_shading_mode(ShadingMode::NORMAL);
-            rayTracer.camera.moveRight(0.2f);
-            glutPostRedisplay();
-            break;
-        case 'q':
-            rayTracer.set_shading_mode(ShadingMode::NORMAL);
-            rayTracer.camera.moveUp(-0.2f);
-            glutPostRedisplay();
-            break;
-        case 'e':
-            rayTracer.set_shading_mode(ShadingMode::NORMAL);
-            rayTracer.camera.moveUp(0.2f);
-            glutPostRedisplay();
-            break;
+    case 'w':
+        rayTracer.set_shading_mode(ShadingMode::NORMAL);
+        rayTracer.camera.moveForward(0.2f);
+        rayTracer.draw();
+        glutPostRedisplay();
+        break;
+    case 's':
+        rayTracer.set_shading_mode(ShadingMode::NORMAL);
+        rayTracer.camera.moveForward(-0.2f);
+        rayTracer.draw();
+        glutPostRedisplay();
+        break;
+    case 'a':
+        rayTracer.set_shading_mode(ShadingMode::NORMAL);
+        rayTracer.camera.moveRight(-0.2f);
+        rayTracer.draw();
+        glutPostRedisplay();
+        break;
+    case 'd':
+        rayTracer.set_shading_mode(ShadingMode::NORMAL);
+        rayTracer.camera.moveRight(0.2f);
+        rayTracer.draw();
+        glutPostRedisplay();
+        break;
+    case 'q':
+        rayTracer.set_shading_mode(ShadingMode::NORMAL);
+        rayTracer.camera.moveUp(-0.2f);
+        rayTracer.draw();
+        glutPostRedisplay();
+        break;
+    case 'e':
+        rayTracer.set_shading_mode(ShadingMode::NORMAL);
+        rayTracer.camera.moveUp(0.2f);
+        rayTracer.draw();
+        glutPostRedisplay();
+        break;
 
         // Roll
-        case 'z':
-            rayTracer.set_shading_mode(ShadingMode::NORMAL);
-            rayTracer.camera.rotateRoll(10.0f);
-            glutPostRedisplay();
-            break;
-        case 'x':
-            rayTracer.set_shading_mode(ShadingMode::NORMAL);
-            rayTracer.camera.rotateRoll(-10.0f);
-            glutPostRedisplay();
-            break;
+    case 'z':
+        rayTracer.set_shading_mode(ShadingMode::NORMAL);
+        rayTracer.camera.rotateRoll(10.0f);
+        rayTracer.draw();
+        glutPostRedisplay();
+        break;
+    case 'x':
+        rayTracer.set_shading_mode(ShadingMode::NORMAL);
+        rayTracer.camera.rotateRoll(-10.0f);
+        rayTracer.draw();
+        glutPostRedisplay();
+        break;
 
         // Zoom
-        case '-':
-            rayTracer.set_shading_mode(ShadingMode::NORMAL);
-            rayTracer.camera.zoom(0.1f);
-            glutPostRedisplay();
-            break;
-        case '+':
-            rayTracer.set_shading_mode(ShadingMode::NORMAL);
-            rayTracer.camera.zoom(-0.1f);
-            glutPostRedisplay();
-            break;
+    case '-':
+        rayTracer.set_shading_mode(ShadingMode::NORMAL);
+        rayTracer.camera.zoom(0.1f);
+        rayTracer.draw();
+        glutPostRedisplay();
+        break;
+    case '+':
+        rayTracer.set_shading_mode(ShadingMode::NORMAL);
+        rayTracer.camera.zoom(-0.1f);
+        rayTracer.draw();
+        glutPostRedisplay();
+        break;
 
         // Reset Camera
-        case 'r':
-            rayTracer.set_shading_mode(ShadingMode::NORMAL);
-            rayTracer.camera.reset();
-            glutPostRedisplay();
-            break;
+    case 'r':
+        rayTracer.set_shading_mode(ShadingMode::NORMAL);
+        rayTracer.camera.reset();
+        rayTracer.draw();
+        glutPostRedisplay();
+        break;
 
         // Shading modes
-        case ' ':
-            rayTracer.set_shading_mode(ShadingMode::RAY_TRACE);
-            glutPostRedisplay();
-            break;
-        case 'n':
-            rayTracer.set_shading_mode(ShadingMode::NORMAL);
-            glutPostRedisplay();
-            break;
-        case 'p':
-            rayTracer.set_shading_mode(ShadingMode::DEBUG);
-            glutPostRedisplay();
-            break;
-        default:
-            glutPostRedisplay();
-            break;
+    case ' ':
+        rayTracer.set_shading_mode(ShadingMode::RAY_TRACE);
+        rayTracer.draw();
+        glutPostRedisplay();
+        break;
+    case 'n':
+        rayTracer.set_shading_mode(ShadingMode::NORMAL);
+        rayTracer.draw();
+        glutPostRedisplay();
+        break;
+    case 'p':
+        rayTracer.set_shading_mode(ShadingMode::DEBUG);
+        rayTracer.draw();
+        glutPostRedisplay();
+        break;
+
+
+    default:
+        glutPostRedisplay();
+        break;
     }
 }
 
 void specialKey(int key, int x, int y) {
     rayTracer.set_shading_mode(ShadingMode::NORMAL);
     switch (key) {
-        case GLUT_KEY_UP:  // up
-            rayTracer.camera.rotateUp(5.0f);
-            glutPostRedisplay();
-            break;
-        case GLUT_KEY_DOWN:  // down
-            rayTracer.camera.rotateUp(-5.0f);
-            glutPostRedisplay();
-            break;
-        case GLUT_KEY_RIGHT:  // right
-            rayTracer.camera.rotateRight(-5.0f);
-            glutPostRedisplay();
-            break;
-        case GLUT_KEY_LEFT:  // left
-            rayTracer.camera.rotateRight(5.0f);
-            glutPostRedisplay();
-            break;
+    case GLUT_KEY_UP:  // up
+        rayTracer.camera.rotateUp(5.0f);
+        rayTracer.draw();
+        glutPostRedisplay();
+        break;
+    case GLUT_KEY_DOWN:  // down
+        rayTracer.camera.rotateUp(-5.0f);
+        rayTracer.draw();
+        glutPostRedisplay();
+        break;
+    case GLUT_KEY_RIGHT:  // right
+        rayTracer.camera.rotateRight(-5.0f);
+        rayTracer.draw();
+        glutPostRedisplay();
+        break;
+    case GLUT_KEY_LEFT:  // left
+        rayTracer.camera.rotateRight(5.0f);
+        rayTracer.draw();
+        glutPostRedisplay();
+        break;
     }
 }
 
-int main(int argc, char **argv) {
+int main(int argc, char** argv) {
     // program has to be run with 3 int arguments
     if (argc != 4) {
         std::cerr << "Usage: " << argv[0] << " <int: samples_per_pixel> <int: max_bounces> <int: scene_id>" << std::endl;
@@ -258,7 +272,7 @@ int main(int argc, char **argv) {
     glutDisplayFunc(display);
     glutKeyboardFunc(keyboard);
     glutSpecialFunc(specialKey);
-
+    rayTracer.draw();  // initial draw to show the scene
     glutMainLoop();
     return 0; /* ANSI C requires main to return int. */
 }

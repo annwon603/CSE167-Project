@@ -1,34 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\",
+  "WorkspaceRootPath": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\src\\geometries\\GeomTriangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\scenes\\teapot_in_box.inl||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\scenes\\teapot_in_box.inl||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\geometries\\GeomTriangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\geometries\\GeomTriangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\include\\GeomTriangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\GeomTriangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\src\\models\\Square.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\models\\Square.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\include\\Obj.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\Obj.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\include\\GeometryBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\GeometryBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\src\\RayTracer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\RayTracer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\RayTracer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\src\\geometries\\GeomSphere.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\include\\Obj.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\Obj.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\scenes\\sphere_in_box.inl||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\scenes\\sphere_in_box.inl||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\geometries\\GeomSphere.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\geometries\\GeomSphere.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\materials\\GlossyMaterial.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\materials\\GlossyMaterial.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\include\\Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\include\\RayTracer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\RayTracer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\include\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\scenes\\open_sky.inl||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\scenes\\open_sky.inl||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +70,196 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Square.cpp",
-              "DocumentMoniker": "C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\src\\models\\Square.cpp",
-              "RelativeDocumentMoniker": "src\\models\\Square.cpp",
-              "ToolTip": "C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\src\\models\\Square.cpp",
-              "RelativeToolTip": "src\\models\\Square.cpp",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAMwCUAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "GeomTriangle.cpp",
+              "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\geometries\\GeomTriangle.cpp",
+              "RelativeDocumentMoniker": "src\\geometries\\GeomTriangle.cpp",
+              "ToolTip": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\geometries\\GeomTriangle.cpp",
+              "RelativeToolTip": "src\\geometries\\GeomTriangle.cpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-20T20:52:06.541Z",
+              "WhenOpened": "2025-03-21T01:43:50.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GeomSphere.cpp",
+              "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\geometries\\GeomSphere.cpp",
+              "RelativeDocumentMoniker": "src\\geometries\\GeomSphere.cpp",
+              "ToolTip": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\geometries\\GeomSphere.cpp",
+              "RelativeToolTip": "src\\geometries\\GeomSphere.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-21T01:33:44.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "teapot_in_box.inl",
+              "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\scenes\\teapot_in_box.inl",
+              "RelativeDocumentMoniker": "src\\scenes\\teapot_in_box.inl",
+              "ToolTip": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\scenes\\teapot_in_box.inl",
+              "RelativeToolTip": "src\\scenes\\teapot_in_box.inl",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-03-20T23:20:43.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Camera.h",
+              "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\include\\Camera.h",
+              "RelativeDocumentMoniker": "include\\Camera.h",
+              "ToolTip": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\include\\Camera.h",
+              "RelativeToolTip": "include\\Camera.h",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-20T23:19:08.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAtwB0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-20T23:19:00.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Scene.cpp",
+              "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\Scene.cpp",
+              "RelativeDocumentMoniker": "src\\Scene.cpp",
+              "ToolTip": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\Scene.cpp",
+              "RelativeToolTip": "src\\Scene.cpp",
+              "ViewState": "AgIAADoAAAAAAAAAAAAtwEoAAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-20T23:15:08.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "sphere_in_box.inl",
+              "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\scenes\\sphere_in_box.inl",
+              "RelativeDocumentMoniker": "src\\scenes\\sphere_in_box.inl",
+              "ToolTip": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\scenes\\sphere_in_box.inl",
+              "RelativeToolTip": "src\\scenes\\sphere_in_box.inl",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-03-20T22:55:45.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Camera.cpp",
+              "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\Camera.cpp",
+              "RelativeDocumentMoniker": "src\\Camera.cpp",
+              "ToolTip": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\Camera.cpp",
+              "RelativeToolTip": "src\\Camera.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-20T22:46:35.936Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Obj.h",
-              "DocumentMoniker": "C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\include\\Obj.h",
+              "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\include\\Obj.h",
               "RelativeDocumentMoniker": "include\\Obj.h",
-              "ToolTip": "C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\include\\Obj.h",
+              "ToolTip": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\include\\Obj.h",
               "RelativeToolTip": "include\\Obj.h",
-              "ViewState": "AgIAACoAAAAAAAAAAAAMwEgAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-20T20:51:35.534Z",
+              "WhenOpened": "2025-03-20T22:40:24.611Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GeomTriangle.h",
-              "DocumentMoniker": "C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\include\\GeomTriangle.h",
-              "RelativeDocumentMoniker": "include\\GeomTriangle.h",
-              "ToolTip": "C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\include\\GeomTriangle.h",
-              "RelativeToolTip": "include\\GeomTriangle.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-20T20:50:43.84Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GeometryBase.h",
-              "DocumentMoniker": "C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\include\\GeometryBase.h",
-              "RelativeDocumentMoniker": "include\\GeometryBase.h",
-              "ToolTip": "C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\include\\GeometryBase.h",
-              "RelativeToolTip": "include\\GeometryBase.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-20T20:50:39.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GeomSphere.cpp",
-              "DocumentMoniker": "C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\src\\geometries\\GeomSphere.cpp",
-              "RelativeDocumentMoniker": "src\\geometries\\GeomSphere.cpp",
-              "ToolTip": "C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\src\\geometries\\GeomSphere.cpp",
-              "RelativeToolTip": "src\\geometries\\GeomSphere.cpp",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACcAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-18T03:06:06.719Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GeomTriangle.cpp",
-              "DocumentMoniker": "C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\src\\geometries\\GeomTriangle.cpp",
-              "RelativeDocumentMoniker": "src\\geometries\\GeomTriangle.cpp",
-              "ToolTip": "C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\src\\geometries\\GeomTriangle.cpp",
-              "RelativeToolTip": "src\\geometries\\GeomTriangle.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-18T03:06:11.77Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "RayTracer.cpp",
-              "DocumentMoniker": "C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\src\\RayTracer.cpp",
+              "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\RayTracer.cpp",
               "RelativeDocumentMoniker": "src\\RayTracer.cpp",
-              "ToolTip": "C:\\Users\\thest\\OneDrive\\Desktop\\CSE 167\\final\\RayTracer-win-linux-setup\\src\\RayTracer.cpp",
+              "ToolTip": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\RayTracer.cpp",
               "RelativeToolTip": "src\\RayTracer.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAACAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-17T06:50:28.835Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GlossyMaterial.cpp",
+              "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\materials\\GlossyMaterial.cpp",
+              "RelativeDocumentMoniker": "src\\materials\\GlossyMaterial.cpp",
+              "ToolTip": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\materials\\GlossyMaterial.cpp",
+              "RelativeToolTip": "src\\materials\\GlossyMaterial.cpp",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAADMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-20T21:21:08.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RayTracer.h",
+              "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\include\\RayTracer.h",
+              "RelativeDocumentMoniker": "include\\RayTracer.h",
+              "ToolTip": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\include\\RayTracer.h",
+              "RelativeToolTip": "include\\RayTracer.h",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-20T22:46:26.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Scene.h",
+              "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\include\\Scene.h",
+              "RelativeDocumentMoniker": "include\\Scene.h",
+              "ToolTip": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\include\\Scene.h",
+              "RelativeToolTip": "include\\Scene.h",
+              "ViewState": "AgIAACQAAAAAAAAAAAAmwCkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-20T22:40:41.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "open_sky.inl",
+              "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\scenes\\open_sky.inl",
+              "RelativeDocumentMoniker": "src\\scenes\\open_sky.inl",
+              "ToolTip": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\src\\scenes\\open_sky.inl",
+              "RelativeToolTip": "src\\scenes\\open_sky.inl",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-03-20T22:39:30.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAAAA4BAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-20T21:23:24.716Z"
             }
           ]
         }

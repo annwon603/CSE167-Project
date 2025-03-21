@@ -43,7 +43,7 @@ file(GLOB_RECURSE SRC_FILES
 include_directories(${INC_DIR})
 
 # Define executable
-add_executable(RayTracer ${SRC_FILES})
+add_executable(RayTracer ${SRC_FILES} "include/BVH.h")
 
 # Link required libraries
 if(WIN32)

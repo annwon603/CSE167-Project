@@ -8,8 +8,14 @@
   "ExpandedNodes": [
     "",
     "\\include",
-    "\\lib"
+    "\\lib",
+    "\\models",
+    "\\src",
+    "\\src\\geometries",
+    "\\src\\materials",
+    "\\src\\models",
+    "\\src\\scenes"
   ],
-  "SelectedNode": "\\include\\Utility.h",
+  "SelectedNode": "\\include\\ModelBase.h",
   "PreviewInSolutionExplorer": false
 }

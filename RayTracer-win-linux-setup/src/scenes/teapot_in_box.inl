@@ -54,11 +54,11 @@ Scene* teapot_in_box() {
     root_node->childtransforms.push_back(translate(mat4(1.0f), vec3(0.0f, 1.95f, 0.0f)));
 
     std::unique_ptr<Node> teapot = std::make_unique<Node>();
-    teapot->model = std::make_unique<Obj>("../models/teapot.obj", glossy_material);
+    teapot->model = std::make_unique<Obj>("../models/BeeKeeper.obj", glossy_material);
     root_node->childnodes.push_back(std::move(teapot));
     root_node->childtransforms.push_back(
-        translate(vec3(0.0f, -2.0f, 0.0f)) *
-        scale(vec3(1.0f, 2.0f, 1.0f)) *
+        translate(vec3(0.0f, 0.0f, 0.0f)) *
+        scale(vec3(0.1f, 0.1f, 0.1f)) *
         rotate(degree_to_rad(30.0f), vec3(0.0f, 1.0f, 0.0f)));
 
     // Initialize the scene
