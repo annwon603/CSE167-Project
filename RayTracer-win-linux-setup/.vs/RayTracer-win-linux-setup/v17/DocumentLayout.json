@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\include\\ModelBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\ModelBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\include\\BVH.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\BVH.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\include\\ModelBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\ModelBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\include\\Ray.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -110,7 +110,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -122,18 +122,17 @@
               "RelativeToolTip": "include\\Ray.h",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-21T03:46:52.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T03:46:52.765Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "BVH.h",
               "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\include\\BVH.h",
               "RelativeDocumentMoniker": "include\\BVH.h",
               "ToolTip": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\include\\BVH.h",
               "RelativeToolTip": "include\\BVH.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAIwFoAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-21T03:43:45.814Z",
               "EditorCaption": ""
@@ -148,8 +147,7 @@
               "RelativeToolTip": "include\\Image.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-21T03:45:15.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T03:45:15.515Z"
             },
             {
               "$type": "Document",
@@ -161,8 +159,7 @@
               "RelativeToolTip": "include\\FreeImage.h",
               "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-21T03:45:09.585Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T03:45:09.585Z"
             },
             {
               "$type": "Document",
@@ -174,12 +171,11 @@
               "RelativeToolTip": "include\\Screenshot.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-21T03:44:30.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T03:44:30.308Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ModelBase.h",
               "DocumentMoniker": "C:\\Users\\15106\\Documents\\GitHub\\CSE167-Project\\RayTracer-win-linux-setup\\include\\ModelBase.h",
               "RelativeDocumentMoniker": "include\\ModelBase.h",
@@ -200,8 +196,7 @@
               "RelativeToolTip": "include\\GeomTriangle.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-21T03:44:11.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T03:44:11.524Z"
             },
             {
               "$type": "Document",
@@ -213,8 +208,7 @@
               "RelativeToolTip": "include\\GeometryBase.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-21T03:44:09.336Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T03:44:09.336Z"
             },
             {
               "$type": "Document",
@@ -226,8 +220,7 @@
               "RelativeToolTip": "include\\MaterialBase.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-21T03:42:04.791Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T03:42:04.791Z"
             },
             {
               "$type": "Document",
@@ -239,8 +232,7 @@
               "RelativeToolTip": "src\\models\\Sphere.cpp",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-21T02:19:46.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T02:19:46.106Z"
             },
             {
               "$type": "Document",
@@ -252,8 +244,7 @@
               "RelativeToolTip": "include\\Obj.h",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-20T22:40:24.611Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T22:40:24.611Z"
             },
             {
               "$type": "Document",
@@ -265,8 +256,7 @@
               "RelativeToolTip": "src\\geometries\\GeomSphere.cpp",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAB8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-21T01:33:44.095Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T01:33:44.095Z"
             },
             {
               "$type": "Document",
@@ -278,8 +268,7 @@
               "RelativeToolTip": "include\\Camera.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-20T23:19:08.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T23:19:08.66Z"
             },
             {
               "$type": "Document",
@@ -291,8 +280,7 @@
               "RelativeToolTip": "src\\geometries\\GeomTriangle.cpp",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-21T01:43:50.772Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T01:43:50.772Z"
             },
             {
               "$type": "Document",
@@ -304,8 +292,7 @@
               "RelativeToolTip": "src\\scenes\\teapot_in_box.inl",
               "ViewState": "AgIAADAAAAAAAAAAAAAAADwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-03-20T23:20:43.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T23:20:43.532Z"
             },
             {
               "$type": "Document",
@@ -317,8 +304,7 @@
               "RelativeToolTip": "src\\scenes\\sphere_in_box.inl",
               "ViewState": "AgIAADMAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-03-20T22:55:45.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T22:55:45.983Z"
             },
             {
               "$type": "Document",
@@ -330,8 +316,7 @@
               "RelativeToolTip": "src\\Camera.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-20T22:46:35.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T22:46:35.936Z"
             },
             {
               "$type": "Document",
@@ -343,8 +328,7 @@
               "RelativeToolTip": "src\\Scene.cpp",
               "ViewState": "AgIAADoAAAAAAAAAAAAtwEoAAAByAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-20T23:15:08.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T23:15:08.652Z"
             },
             {
               "$type": "Document",
@@ -368,8 +352,7 @@
               "RelativeToolTip": "src\\materials\\GlossyMaterial.cpp",
               "ViewState": "AgIAAIcAAAAAAAAAAAAAAIQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-20T21:21:08.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T21:21:08.3Z"
             },
             {
               "$type": "Document",
@@ -381,8 +364,7 @@
               "RelativeToolTip": "src\\RayTracer.cpp",
               "ViewState": "AgIAAGMAAAAAAAAAAAAAACAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-17T06:50:28.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T06:50:28.835Z"
             },
             {
               "$type": "Document",

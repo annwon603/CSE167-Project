@@ -30,6 +30,12 @@ struct BVHTriangle {
 		Max = max;
 		Index = index;
 	}
+	BVHTriangle(glm::vec3& a, glm::vec3& b, glm::vec3& c)
+	{
+		vertA = a;
+		vertB = b;
+		vertC = c;
+	}
 };
 struct BoundBox {
 	glm::vec3 min = glm::vec3(1.0f) * pos_inf;
@@ -77,6 +83,7 @@ public:
 			vec3 b = vertices[triangleIndices[i + 1]];
 			vec3 c = vertices[triangleIndices[i + 2]];
 			//triangles.push_back(BVHTriangle(vector<vec3>({a, b, c}), vector<vec3>()));
+			triangles.emplace_back(a, b, c);
 		}
 
 		Node root(bb, triangles);
