@@ -1,8 +1,6 @@
 #include "BVH.h"
 
 // Define global variables
-float pos_inf = std::numeric_limits<float>::infinity();
-float neg_inf = -std::numeric_limits<float>::infinity();
 int maxDepth = 10;
 
 BVHTriangle::BVHTriangle(glm::vec3& a, glm::vec3& b, glm::vec3& c) : vertA(a), vertB(b), vertC(c) {
@@ -10,12 +8,17 @@ BVHTriangle::BVHTriangle(glm::vec3& a, glm::vec3& b, glm::vec3& c) : vertA(a), v
 	vertB = b;
 	vertC = c;
 }
+
 BVHTriangle::BVHTriangle(glm::vec3& centre, glm::vec3& min, glm::vec3& max, int& index)
 {
 	Centre = centre;
 	Min = min;
 	Max = max;
 	Index = index;
+}
+
+vec3 BoundBox::centre() const {
+	return (min + max) * 0.5f;
 }
 
 void BoundBox::GrowToInclude(glm::vec3& point) {
@@ -30,7 +33,7 @@ void BoundBox::GrowToInclude(BVHTriangle& triangle)
 	GrowToInclude(triangle.vertC);
 }
 
-BVH::BVH(vector<vec3> vertices, vector<int> triangleIndices) {
+BVH::BVH(vector<vec3> vertices, vector<unsigned int> triangleIndices) {
     BoundBox bb;
 
     for (vec3& vertex : vertices) {
@@ -52,7 +55,9 @@ BVH::BVH(vector<vec3> vertices, vector<int> triangleIndices) {
     Split(root, 0);
 }
 
-void BVH::Split(BNode& parent, int depth) {
+BVH::BVH() { }
+
+void BVH::Split(BNode parent, int depth) {
 	if (depth == maxDepth) return;
 
 	parent.childIndex = nodes.size();
@@ -82,4 +87,5 @@ void BVH::Split(BNode& parent, int depth) {
 
 		Split(childLeft, depth + 1);
 		Split(childRight, depth + 1);
+	}
 }
