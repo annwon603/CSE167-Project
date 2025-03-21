@@ -65,6 +65,7 @@ struct Node {
 	Node* childRight;
 
 	Node(BoundBox boundingBox, vector<BVHTriangle> triangles) : boundingBox(boundingBox), triangles(triangles) { }
+	Node() { }
 };
 
 class BVH {
@@ -94,15 +95,15 @@ public:
 		//if (depth == maxDepth) return;
 
 		for (vector<BVHTriangle>::iterator itr = parent.triangles.begin(); itr != parent.triangles.end(); ++itr) {
-			/*bool inA = (*itr).Centre < parent.boundingBox.centre.x;
+			bool inA = (*itr).Centre.x < parent.boundingBox.centre().x;
 			Node child;
-			if (inA) child = parent.childLeft;
-			else child = parent.childRight;
+			if (inA) child = *parent.childLeft;
+			else child = *parent.childRight;
 			child.triangles.push_back(*itr);
-			child.boundingBox.growToInclude(*itr);
+			child.boundingBox.GrowToInclude(*itr);
 
-			Split(parent.childLeft, depth + 1);
-			Split(parent.childRight, depth + 1);*/
+			Split(*parent.childLeft, depth + 1);
+			Split(*parent.childRight, depth + 1);
 		}
 	}
 };
