@@ -61,8 +61,9 @@ struct BoundBox {
 struct Node {
 	BoundBox boundingBox;
 	vector<BVHTriangle> triangles;
-	Node* childLeft;
-	Node* childRight;
+	int triangleIndex;
+	int triangleCount;
+	int childIndex;
 
 	Node(BoundBox boundingBox, vector<BVHTriangle> triangles) : boundingBox(boundingBox), triangles(triangles) { }
 	Node() { }
@@ -70,6 +71,9 @@ struct Node {
 
 class BVH {
 public:
+	vector<Node> nodes;
+	vector<BVHTriangle> triangles;
+
 	BVH(vector<vec3> vertices, vector<int> triangleIndices) {
 		BoundBox bb;
 
@@ -94,16 +98,33 @@ public:
 	void Split(Node parent, int depth) {
 		//if (depth == maxDepth) return;
 
-		for (vector<BVHTriangle>::iterator itr = parent.triangles.begin(); itr != parent.triangles.end(); ++itr) {
-			bool inA = (*itr).Centre.x < parent.boundingBox.centre().x;
-			Node child;
-			if (inA) child = *parent.childLeft;
-			else child = *parent.childRight;
-			child.triangles.push_back(*itr);
-			child.boundingBox.GrowToInclude(*itr);
+		parent.childIndex = nodes.size();
+		Node childLeft;
+		childLeft.triangleIndex = parent.triangleIndex;
+		Node childRight;
+		childRight.triangleIndex = parent.triangleIndex;
+		nodes.push_back(childLeft);
+		nodes.push_back(childRight);
 
-			Split(*parent.childLeft, depth + 1);
-			Split(*parent.childRight, depth + 1);
+		for (int i = parent.triangleIndex; i < parent.triangleIndex + parent.triangleCount; i++) {
+			bool inA = triangles[i].Centre.x < parent.boundingBox.centre().x;
+
+			Node child;
+			if (inA) child = childLeft;
+			else child = childRight;
+			child.boundingBox.GrowToInclude(triangles[i]);
+			child.triangleCount++;
+
+			if (inA) {
+				int swap = child.triangleIndex + child.triangleCount - 1;
+				BVHTriangle tempTriangle = triangles[i];
+				triangles[i] = triangles[swap];
+				triangles[swap] = tempTriangle;
+				childLeft.triangleIndex++;
+			}
+
+			Split(childLeft, depth + 1);
+			Split(childRight, depth + 1);
 		}
 	}
 };
