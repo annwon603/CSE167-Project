@@ -20,7 +20,8 @@ struct BVHTriangle {
 	glm::vec3 Min;
 	glm::vec3 Max;
 	glm::vec3 vertA;
-	glm::vec3 vert
+	glm::vec3 vertB;
+	glm::vec3 vertC;
 	int Index;
 	BVHTriangle(glm::vec3& centre, glm::vec3& min, glm::vec3& max, int& index)
 	{
@@ -49,14 +50,15 @@ struct BoundBox {
 		GrowToInclude(triangle.vertB);
 		GrowToInclude(triangle.vertC);
 	}
-
-}
+};
 
 struct Node {
 	BoundBox boundingBox;
-	vector<GeomTriangle> triangles;
+	vector<BVHTriangle> triangles;
 	Node* childLeft;
 	Node* childRight;
+
+	Node(BoundBox boundingBox, vector<BVHTriangle> triangles) : boundingBox(boundingBox), triangles(triangles) { }
 };
 
 class BVH {
@@ -65,20 +67,36 @@ public:
 		BoundBox bb;
 
 		for (vector<vec3>::iterator itr = vertices.begin(); itr != vertices.end(); ++itr) {
-			// bb.GrowToInclude(*itr);
+			 bb.GrowToInclude(*itr);
 		}
 
-		vector<GeomTriangle> triangles;
+		vector<BVHTriangle> triangles;
 
 		for (int i = 0; i < triangleIndices.size(); i++) {
 			vec3 a = vertices[triangleIndices[i]];
 			vec3 b = vertices[triangleIndices[i + 1]];
 			vec3 c = vertices[triangleIndices[i + 2]];
-			triangles.push_back(GeomTriangle(vector<vec3>({a, b, c}), vector<vec3>()));
+			//triangles.push_back(BVHTriangle(vector<vec3>({a, b, c}), vector<vec3>()));
 		}
 
-		// Node root(bb, triangles);
-		// Split(root);
+		Node root(bb, triangles);
+		Split(root, 0);
+	}
+
+	void Split(Node parent, int depth) {
+		//if (depth == maxDepth) return;
+
+		for (vector<BVHTriangle>::iterator itr = parent.triangles.begin(); itr != parent.triangles.end(); ++itr) {
+			/*bool inA = (*itr).Centre < parent.boundingBox.centre.x;
+			Node child;
+			if (inA) child = parent.childLeft;
+			else child = parent.childRight;
+			child.triangles.push_back(*itr);
+			child.boundingBox.growToInclude(*itr);
+
+			Split(parent.childLeft, depth + 1);
+			Split(parent.childRight, depth + 1);*/
+		}
 	}
 };
 
