@@ -55,6 +55,7 @@ BVH::BVH(vector<vec3> vertices, vector<unsigned int> indices) {
 		
 		// Recreate triangle for BVH
 		BVHTriangle tri(a, b, c, i / 3.0f); // Also for index, remember one in geometries since these BVH ones swap
+		
 		triangles.push_back(tri);
 
 		boundingBox.GrowToInclude(tri.min, tri.max);
@@ -62,7 +63,6 @@ BVH::BVH(vector<vec3> vertices, vector<unsigned int> indices) {
 
 	BNode root(boundingBox);	// Root node for BVH graph I suppose
 	Split(root, 0);	// Split until max depth
-
 }
 
 void BVH::Split(BNode parent, int depth) {

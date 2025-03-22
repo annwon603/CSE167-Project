@@ -20,7 +20,7 @@ class Obj : public ModelBase {
         // Load triangle soup
         loadObj(filename);
     }
-    BVH* bvh;
+    std::unique_ptr<BVH> bvh;
 
    private:
     void loadObj(const char* filename) {
@@ -76,13 +76,14 @@ class Obj : public ModelBase {
             geometries.push_back(std::make_unique<GeomTriangle>(triVertices, triNormals));
         }
 
-        bvh = &BVH(temp_vertices, vertexIndices);
-        
+        bvh = make_unique<BVH>(temp_vertices, vertexIndices);
+
         std::cout << "Done loading and processing. " << geometries.size() << std::endl;
     }
 
     bool intersect(Ray& ray) override {
         bool isIntersect = false;
+        //cout << bvh->nodes.size() << endl;
 
         // Cache ray parameters
         vec3 p0(ray.p0);
@@ -92,16 +93,14 @@ class Obj : public ModelBase {
         ray.p0 = vec3(inverse_transform_matrix * vec4(ray.p0, 1.0f));
         ray.dir = normalize(vec3(inverse_transform_matrix * vec4(ray.dir, 0.0f)));
 
-
         // Stack used to traverse BVH nodes (containing list of triangles and a BoundingBox)
-        vector<BNode> nodeStack(20);
+        vector<BNode> nodeStack(10);
         int stackIndex = 0;
         nodeStack[stackIndex++] = bvh->nodes[0];
 
         // Traverse BVH to find closest triangle
         while (stackIndex > 0) {
             BNode node = nodeStack[--stackIndex];
-            // TODO code messes up here?
 
             // Check if BNode is leaf (i.e. triangles w/ no BoundingBox)
             bool isLeaf = node.triangleCount > 0;
